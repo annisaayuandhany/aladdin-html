@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom right, #fff8e1, #fce4ec);
+  color: #4a148c;
+}
+
+header {
+  background-color: #7e57c2;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+  font-size: 2.5em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-bottom: 8px dotted #f8bbd0;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+nav ul {
+  background: #ce93d8;
+  list-style: none;
+  margin: 0;
+  padding: 1em 0.5em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.9em;
+  border-top: 6px solid #f06292;
+  border-bottom: 6px solid #f06292;
+  border-radius: 30px;
+  box-shadow: 0 6px 10px rgba(186, 104, 200, 0.4);
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(135deg, #ba68c8, #ab47bc);
+  padding: 0.6em 1.3em;
+  border-radius: 25px;
+  font-size: 1.05em;
+  font-weight: 600;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  user-select: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background: linear-gradient(135deg, #f48fb1, #f06292);
+  color: #fffde7;
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 8px 20px rgba(244, 143, 177, 0.7);
+  text-shadow: 1px 1px 3px #f06292;
+  cursor: pointer;
+}
+@keyframes glow {
+  0% { text-shadow: 0 0 5px #b39ddb, 0 0 15px #9575cd; }
+  100% { text-shadow: 0 0 20px #e1bee7, 0 0 40px #ba68c8; }
+}
+
+a {
+  text-decoration: none; /* Menghilangkan garis bawah */
+  color: white; /* Atau sesuaikan dengan tema kamu */
+}
+
